@@ -42,8 +42,11 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
+
     - name: Controlla se ci sono state altre esecuzioni di LocalNonDocCommitExtractor e recupera i file
       run: | 
+        mkdir -p output
+        mkdir -p appoggio
         if [ -z "$(find output/${{ vars.REPO }} -mindepth 1 -maxdepth 1)" ]; then
            echo "Questa è la prima esecuzione."
         else
