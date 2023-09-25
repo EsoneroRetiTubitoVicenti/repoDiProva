@@ -2,16 +2,16 @@ name: Truck-Factor
 
 on:
   workflow_dispatch:
-  workflow_run:
-    workflows: ["Runner GetA80Lists"]
-    types:
-      - completed
+#  workflow_run:
+#    workflows: ["Runner GetA80Lists"]
+#    types:
+#      - completed
 
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+#    if: ${{ github.event.workflow_run.conclusion == 'success' }}
 
     steps:
     - name: Checkout main repo
@@ -65,6 +65,8 @@ jobs:
         mv developersInactivityAnalysis/Local_Repositories/${{ vars.REPO }}/commitfileinfo.log output
         mv developersInactivityAnalysis/Local_Repositories/${{ vars.REPO }}/filelist.log output
 
+    - name: Run Python script
+      run: python3 developersInactivityAnalysis/TruckFactor/TxtReader.py ${{ vars.REPO }}
 
     - name: Commit changes
       run: |        
