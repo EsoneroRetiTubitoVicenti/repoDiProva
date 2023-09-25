@@ -81,7 +81,13 @@ jobs:
 
     - name: Move CSV file to main repository
       run: | 
-        rm -r output/${{ vars.OWNER }}
+        mkdir -p output
+        if [ -z "$(find output/${{ vars.REPO }} -mindepth 1 -maxdepth 1)" ]; then
+           echo "output empty"
+        else
+           rm -r output/${{ vars.OWNER }}
+        fi
+        
         if [ -f "output/Commit_Extraction_${{ vars.OWNER }}.log" ]; then  
            rm output/Commit_Extraction_${{ vars.OWNER }}.log          
            mv developersInactivityAnalysis/logs/Commit_Extraction_${{ vars.OWNER }}.log output
