@@ -2,15 +2,15 @@ name: Runner GetA80Lists
 
 on:
   workflow_dispatch:
-  workflow_run:
-    workflows: ["Runner UnmaskAliases"]
-    types:
-      - completed
+#  workflow_run:
+#    workflows: ["Runner UnmaskAliases"]
+#    types:
+#      - completed
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+ #   if: ${{ github.event.workflow_run.conclusion == 'success' }}
 
     steps:
     - name: Checkout main repo
@@ -58,6 +58,8 @@ jobs:
       env:
          MY_SECRET: ${{ secrets.TOKEN }}
       run: |
+        rm -r developersInactivityAnalysis/Resources
+        cp -r Resources developersInactivityAnalysis
         cp -r output/${{ vars.OWNER }} developersInactivityAnalysis/Organizations
         cp output/unmasking_results.csv developersInactivityAnalysis/A80_Results/${{ vars.REPO }}
         python3 developersInactivityAnalysis/CoreSelection/GetA80Lists.py ${{ vars.OWNER }}/${{ vars.REPO }} $MY_SECRET
