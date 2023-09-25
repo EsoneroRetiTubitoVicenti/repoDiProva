@@ -80,14 +80,12 @@ jobs:
 
     - name: Move CSV file to main repository
       run: | 
-        if [ -z "$(find output/${{ vars.OWNER }} -mindepth 1 -maxdepth 1)" ]; then
-           
+        rm -r output/${{ vars.OWNER }}
+        if [ -f "output/Commit_Extraction_${{ vars.OWNER }}.log" ]; then  
+           rm output/Commit_Extraction_${{ vars.OWNER }}.log          
            mv developersInactivityAnalysis/logs/Commit_Extraction_${{ vars.OWNER }}.log output
            mv developersInactivityAnalysis/Organizations/${{ vars.OWNER }} output
-        else
-           rm -r output/${{ vars.OWNER }}
-           rm output/Commit_Extraction_${{ vars.OWNER }}.log
-           
+        else          
            mv developersInactivityAnalysis/logs/Commit_Extraction_${{ vars.OWNER }}.log output
            mv developersInactivityAnalysis/Organizations/${{ vars.OWNER }} output
         fi
