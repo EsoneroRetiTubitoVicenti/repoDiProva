@@ -3,7 +3,7 @@ name: Truck-Factor
 on:
   workflow_dispatch:
   workflow_run:
-    workflows: ["Runner LocalNonDocCommitExtractor"]
+    workflows: ["Runner LocalNonDocCommitExtractor", "Secondo avvio LocalNonDocCommitExtractor"]
     types:
       - completed
 
