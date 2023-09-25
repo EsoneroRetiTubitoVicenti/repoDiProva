@@ -2,15 +2,15 @@ name: Runner GetA80Lists
 
 on:
   workflow_dispatch:
-#  workflow_run:
-#    workflows: ["Runner CommitExtractor", "Secondo avvio CommitExtractor"]
-#    types:
-#      - completed
+  workflow_run:
+    workflows: ["Runner UnmaskAliases"]
+    types:
+      - completed
 
 jobs:
   build:
     runs-on: ubuntu-latest
-#    if: ${{ github.event.workflow_run.conclusion == 'success' && ( github.event.workflow_run.name == 'Runner CommitExtractor' || github.event.workflow_run.name == 'Secondo avvio CommitExtractor' )}}
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
 
     steps:
     - name: Checkout main repo
