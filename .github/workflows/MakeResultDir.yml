@@ -2,16 +2,16 @@ name: MakeResultDir
 
 on:
   workflow_dispatch:
-  workflow_run:
-    workflows: ["Runner RecommenderDevs"]
-    types:
-      - completed
+#  workflow_run:
+#    workflows: ["Runner RecommenderDevs"]
+#    types:
+#      - completed
 
 
 jobs:
   move_output:
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+ #   if: ${{ github.event.workflow_run.conclusion == 'success' }}
     
     steps:
     - name: Checkout repository
