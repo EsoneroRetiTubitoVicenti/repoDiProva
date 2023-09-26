@@ -88,7 +88,7 @@ jobs:
     - name: Move CSV file to main repository
       run: | 
         mkdir -p output
-        if [ -z "$(find output/${{ vars.REPO }} -mindepth 1 -maxdepth 1)" ]; then
+        if [ -z "$(find output/${{ vars.OWNER }} -mindepth 1 -maxdepth 1)" ]; then
            echo "output empty"
         else
            rm -r output/${{ vars.OWNER }}
