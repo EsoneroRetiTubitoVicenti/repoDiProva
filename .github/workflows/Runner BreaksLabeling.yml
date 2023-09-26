@@ -46,6 +46,7 @@ jobs:
         mkdir -p developersInactivityAnalysis/Organizations
         mkdir -p developersInactivityAnalysis/logs
         cp -r output/${{ vars.OWNER }} developersInactivityAnalysis/Organizations
+        mkdir -p developersInactivityAnalysis/Organizations/${{ vars.OWNER }}/Dev_Breaks/A80MOD
         
         if [ -f "output/Breaks_Labeling_${{ vars.OWNER }}.log" ]; then
            echo "Ci sono state altre esecuzioni, recupero i file..."
