@@ -2,15 +2,15 @@ name: Sposta file e cambia nome
 
 on:
   workflow_dispatch:
-  workflow_run:
-    workflows: ["Runner CommitExtractor", "Secondo avvio CommitExtractor"]
-    types:
-      - completed
+#  workflow_run:
+#    workflows: ["Runner CommitExtractor", "Secondo avvio CommitExtractor"]
+#    types:
+#      - completed
 
 jobs:
   move-and-rename:
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+#    if: ${{ github.event.workflow_run.conclusion == 'success' }}
 
     steps:
     - name: Check out il repository
