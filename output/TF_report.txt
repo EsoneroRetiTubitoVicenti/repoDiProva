@@ -1,0 +1,10 @@
+2023-09-26 15:55:58 INFO  Extracting logCommits...  ../Local_Repositories/crystal/
+2023-09-26 15:55:59 INFO  crystal-lang/crystal: Extracting logCommitFiles...
+2023-09-26 15:56:00 INFO  crystal-lang/crystal: Extracting file information...
+2023-09-26 15:56:00 INFO  crystal-lang/crystal: Extracting and calculating authorship information...
+TF = 3 (coverage = 48.87%)
+TF authors (Developer;Files;Percentage):
+Ary Borenszweig;790;39.72
+Julien Portalier;283;14.23
+Johannes Muller;273;13.73
+
