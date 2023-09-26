@@ -2,16 +2,16 @@ name: Runner TxtReader
 
 on:
   workflow_dispatch:
-#  workflow_run:
- #  workflows: ["Truck-Factor"]
- #  types:
-  #  - completed
+  workflow_run:
+   workflows: ["Truck-Factor"]
+   types:
+    - completed
 
 
 jobs:
   build:
     runs-on: ubuntu-latest
- #   if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
 
     steps:
     - name: Checkout main repo
