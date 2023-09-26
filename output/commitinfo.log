@@ -1,3 +1,9 @@
+6c3ff21354061f2b9f822442c370f0b92e25ddad-;-Gaspar Capello-;-gaspar@igara.com-;-1695149289-;-David Capello-;-david@igara.com-;-1695677883-;-Fix-Full-Preview-and-Edges-setting-on-Cursors-preferences-fix-3188
+74d4154657a1cba6b7d1b68262d6136dc699de3f-;-Martín Capello-;-martin@igara.com-;-1695145988-;-David Capello-;-david@igara.com-;-1695677436-;-Set-GraphicsContext.palette-automatically-when-a-Sprite-s-indexed-image
+d777a9a32534e2b96c86e72062de60034d7ea345-;-Martín Capello-;-martin@igara.com-;-1695145815-;-David Capello-;-david@igara.com-;-1695677436-;-lua-Add-GraphicsContext.palette-property-to-set-the-palette-used-to-draw-indexed-images
+54116a9550264239aaa8126fa64c9e0f2ad4018c-;-Martín Capello-;-martin@igara.com-;-1695056291-;-David Capello-;-david@igara.com-;-1695677436-;-Use-transparent-color-when-the-source-indexed-image-uses-mask-color-fix-3960
+94b5158a5d294ec84a90e8f5c2ae83ed37c346fd-;-Martín Capello-;-martin@igara.com-;-1695055591-;-David Capello-;-david@igara.com-;-1695677436-;-Fix-blend-mode-usage-for-GraphicsContext-drawImage-image-x-y-fix-3960
+19b54ffd4ee6812d437f5be7bf6f762b77d92fb0-;-Michał Janiszewski-;-janisozaur@users.noreply.github.com-;-1695665512-;-GitHub-;-noreply@github.com-;-1695665512-;-Use-ccache-on-macOS
 af19d818069aaea6b4fe1bd130b09d7c5748c054-;-Michał Janiszewski-;-janisozaur@users.noreply.github.com-;-1681199400-;-David Capello-;-david@igara.com-;-1695651229-;-Include-build-type-in-ccache-key
 bcbe61c882c992291f14fc0b56464c120c40869d-;-Gaspar Capello-;-gaspar@igara.com-;-1691504307-;-David Capello-;-david@igara.com-;-1695411199-;-Fix-border-padding-on-the-right-and-bottom-sides-not-being-placed-fix-3993
 a0331743de1df4b41b1c9ab5a1f0338a0e4c6188-;-Gaspar Capello-;-gaspar@igara.com-;-1695138539-;-David Capello-;-david@igara.com-;-1695221063-;-Fix-Color-Range-uses-last-active-selection-instead-of-active-selection-fix-4045
