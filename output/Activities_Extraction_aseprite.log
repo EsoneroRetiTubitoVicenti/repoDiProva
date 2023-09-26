@@ -1,0 +1,302 @@
+INFO:root:Activity Extraction Started for aseprite.
+INFO:root:Project aseprite/pixman Started Activities Extraction. 1 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 1 of 75 Side Projects
+INFO:root:Project aseprite/jsoncpp-cmake Started Activities Extraction. 2 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 2 of 75 Side Projects
+INFO:root:Project aseprite/msgpack-c Started Activities Extraction. 3 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 3 of 75 Side Projects
+INFO:root:Project aseprite/libuv Started Activities Extraction. 4 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 4 of 75 Side Projects
+INFO:root:Project aseprite/aseprite Started Activities Extraction. 5 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 5 of 75 Side Projects
+INFO:root:Project aseprite/simpleini Started Activities Extraction. 6 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 6 of 75 Side Projects
+INFO:root:Project aseprite/tinythreadpp Started Activities Extraction. 7 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 7 of 75 Side Projects
+INFO:root:Project aseprite/contributor_covenant Started Activities Extraction. 8 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 8 of 75 Side Projects
+INFO:root:Project aseprite/stb Started Activities Extraction. 9 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 9 of 75 Side Projects
+INFO:root:Project aseprite/api Started Activities Extraction. 10 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 10 of 75 Side Projects
+INFO:root:Project aseprite/duktape Started Activities Extraction. 11 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 11 of 75 Side Projects
+INFO:root:Project aseprite/curl Started Activities Extraction. 12 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 12 of 75 Side Projects
+INFO:root:Project aseprite/gtest Started Activities Extraction. 13 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 13 of 75 Side Projects
+INFO:root:Project aseprite/libzip Started Activities Extraction. 14 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 14 of 75 Side Projects
+INFO:root:Project aseprite/docs Started Activities Extraction. 15 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 15 of 75 Side Projects
+INFO:root:Project aseprite/flic Started Activities Extraction. 16 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 16 of 75 Side Projects
+INFO:root:Project aseprite/freetype2 Started Activities Extraction. 17 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 17 of 75 Side Projects
+INFO:root:Project aseprite/libwebp Started Activities Extraction. 18 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 18 of 75 Side Projects
+INFO:root:Project aseprite/skia Started Activities Extraction. 19 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 19 of 75 Side Projects
+INFO:root:Project aseprite/laf Started Activities Extraction. 20 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 20 of 75 Side Projects
+INFO:root:Project aseprite/harfbuzz Started Activities Extraction. 21 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 21 of 75 Side Projects
+INFO:root:Project aseprite/libpng Started Activities Extraction. 22 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 22 of 75 Side Projects
+INFO:root:Project aseprite/zlib Started Activities Extraction. 23 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 23 of 75 Side Projects
+INFO:root:Project aseprite/css-layout Started Activities Extraction. 24 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 24 of 75 Side Projects
+INFO:root:Project aseprite/stringencoders Started Activities Extraction. 25 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 25 of 75 Side Projects
+INFO:root:Project aseprite/googletest Started Activities Extraction. 26 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 26 of 75 Side Projects
+INFO:root:Project aseprite/clip Started Activities Extraction. 27 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 27 of 75 Side Projects
+INFO:root:Project aseprite/observable Started Activities Extraction. 28 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 28 of 75 Side Projects
+INFO:root:Project aseprite/cmark Started Activities Extraction. 29 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 29 of 75 Side Projects
+INFO:root:Project aseprite/fmt Started Activities Extraction. 30 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 30 of 75 Side Projects
+INFO:root:Project aseprite/tinyxml2 Started Activities Extraction. 31 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 31 of 75 Side Projects
+INFO:root:Project aseprite/themes Started Activities Extraction. 32 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 32 of 75 Side Projects
+INFO:root:Project aseprite/json Started Activities Extraction. 33 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 33 of 75 Side Projects
+INFO:root:Project aseprite/libarchive Started Activities Extraction. 34 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 34 of 75 Side Projects
+INFO:root:Project aseprite/json11 Started Activities Extraction. 35 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 35 of 75 Side Projects
+INFO:root:Project aseprite/undo Started Activities Extraction. 36 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 36 of 75 Side Projects
+INFO:root:Project aseprite/benchmark Started Activities Extraction. 37 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 37 of 75 Side Projects
+INFO:root:Project aseprite/mujs Started Activities Extraction. 38 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 38 of 75 Side Projects
+INFO:root:Project aseprite/create-dmg Started Activities Extraction. 39 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 39 of 75 Side Projects
+INFO:root:Project aseprite/giflib Started Activities Extraction. 40 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 40 of 75 Side Projects
+INFO:root:Project aseprite/languages Started Activities Extraction. 41 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 41 of 75 Side Projects
+INFO:root:Project aseprite/tests Started Activities Extraction. 42 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 42 of 75 Side Projects
+INFO:root:Project aseprite/cpp-httplib Started Activities Extraction. 43 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 43 of 75 Side Projects
+INFO:root:Project aseprite/rtaudio Started Activities Extraction. 44 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 44 of 75 Side Projects
+INFO:root:Project aseprite/katana-parser Started Activities Extraction. 45 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 45 of 75 Side Projects
+INFO:root:Project aseprite/lua Started Activities Extraction. 46 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 46 of 75 Side Projects
+INFO:root:Project aseprite/tinyexpr Started Activities Extraction. 47 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 47 of 75 Side Projects
+INFO:root:Project aseprite/spanish-extension Started Activities Extraction. 48 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 48 of 75 Side Projects
+INFO:root:Project aseprite/sol2 Started Activities Extraction. 49 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 49 of 75 Side Projects
+INFO:root:Project aseprite/allegro Started Activities Extraction. 50 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 50 of 75 Side Projects
+INFO:root:Project aseprite/vcpkg Started Activities Extraction. 51 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 51 of 75 Side Projects
+INFO:root:Project aseprite/sfntly Started Activities Extraction. 52 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 52 of 75 Side Projects
+INFO:root:Project aseprite/Aseprite-Script-Examples Started Activities Extraction. 53 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 53 of 75 Side Projects
+INFO:root:Project aseprite/better-enums Started Activities Extraction. 54 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 54 of 75 Side Projects
+INFO:root:Project aseprite/breakpad Started Activities Extraction. 55 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 55 of 75 Side Projects
+INFO:root:Project aseprite/crashpad Started Activities Extraction. 56 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 56 of 75 Side Projects
+INFO:root:Project aseprite/mini_chromium Started Activities Extraction. 57 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 57 of 75 Side Projects
+INFO:root:Project aseprite/json.lua Started Activities Extraction. 58 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 58 of 75 Side Projects
+INFO:root:Project aseprite/psd Started Activities Extraction. 59 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 59 of 75 Side Projects
+INFO:root:Project aseprite/inja Started Activities Extraction. 60 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 60 of 75 Side Projects
+INFO:root:Project aseprite/tga Started Activities Extraction. 61 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 61 of 75 Side Projects
+INFO:root:Project aseprite/fuzz Started Activities Extraction. 62 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 62 of 75 Side Projects
+INFO:root:Project aseprite/wil Started Activities Extraction. 63 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 63 of 75 Side Projects
+INFO:root:Project aseprite/IXWebSocket Started Activities Extraction. 64 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 64 of 75 Side Projects
+INFO:root:Project aseprite/spdlog Started Activities Extraction. 65 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 65 of 75 Side Projects
+INFO:root:Project aseprite/pugixml Started Activities Extraction. 66 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 66 of 75 Side Projects
+INFO:root:Project aseprite/cityhash Started Activities Extraction. 67 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 67 of 75 Side Projects
+INFO:root:Project aseprite/sentry-native Started Activities Extraction. 68 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 68 of 75 Side Projects
+INFO:root:Project aseprite/mbedtls Started Activities Extraction. 69 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 69 of 75 Side Projects
+INFO:root:Project aseprite/test-images Started Activities Extraction. 70 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 70 of 75 Side Projects
+INFO:root:Project aseprite/mimalloc Started Activities Extraction. 71 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 71 of 75 Side Projects
+INFO:root:Project aseprite/Attachment-System Started Activities Extraction. 72 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 72 of 75 Side Projects
+INFO:root:Project aseprite/qoi Started Activities Extraction. 73 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 73 of 75 Side Projects
+INFO:root:Project aseprite/lua-cjson Started Activities Extraction. 74 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 74 of 75 Side Projects
+INFO:root:Project aseprite/efsw Started Activities Extraction. 75 of 75
+INFO:root:Starting Issue/PullRequests Extraction
+INFO:root:Pulls Extraction Complete
+INFO:root:Commit Extraction COMPLETE for 75 of 75 Side Projects
+INFO:root:Commit Extraction SUCCESSFULLY COMPLETED
