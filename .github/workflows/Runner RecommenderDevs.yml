@@ -43,26 +43,29 @@ jobs:
 
 
     - name: Run Python script recommender_devs.py
-      run: python3 developersInactivityAnalysis/Devrecommender/recommender_devs.py github ${{ vars.REPO }} 10 2
+      run: |
+        rm -r developersInactivityAnalysis/Resources
+        cp -r Resources developersInactivityAnalysis
+        python3 developersInactivityAnalysis/Devrecommender/recommender_devs.py ${{ vars.OWNER }} ${{ vars.REPO }} 10 2
       timeout-minutes: 340
 
 
-    - name: Creazione della cartella con la data corrente
-      run: mkdir -p pastExecutions/$(date +'%Y-%m-%d')
-      
-    - name: Sposta i file dall'output alla cartella con la data corrente
-      run: mv output/* pastExecutions/$(date +'%Y-%m-%d')
+#    - name: Creazione della cartella con la data corrente
+#      run: mkdir -p pastExecutions/$(date +'%Y-%m-%d')
+#      
+#    - name: Sposta i file dall'output alla cartella con la data corrente
+#      run: mv output/* pastExecutions/$(date +'%Y-%m-%d')
 
-    - name: Svuota la cartella "output" e "appoggio"
-      run: |
-        rm -rf output/*
-        rm -rf appoggio/*
+#    - name: Svuota la cartella "output" e "appoggio"
+#      run: |
+#        rm -rf output/*
+#        rm -rf appoggio/*
       
     - name: Commit changes
       run: |        
         git config --local user.name "domenico-77"
         git config --local user.email "d.vicenti1@studenti.uniba.it"
         git pull
-        git add --a
+        git add output
         git commit -m "End process"
         git push
