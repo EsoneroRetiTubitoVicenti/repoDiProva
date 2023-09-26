@@ -1,0 +1,246 @@
+INFO:root:Commit Extraction Started for SpaceVim.
+INFO:root:Commit Extraction for SpaceVim
+INFO:root:Initializing Extraction
+INFO:root:Starting New Extraction
+INFO:root:Commit Extraction Complete
+INFO:root:Start Writing Commit History Table for SpaceVim
+INFO:root:Commit History Table Written
+INFO:root:Starting Inactivity Computation for SpaceVim
+INFO:root:Inactivity Computation Done
+INFO:root:Commit Extraction for vim-luacomplete
+INFO:root:Initializing Extraction
+INFO:root:Starting New Extraction
+INFO:root:Commit Extraction Complete
+INFO:root:Start Writing Commit History Table for vim-luacomplete
+INFO:root:Commit History Table Written
+INFO:root:Starting Inactivity Computation for vim-luacomplete
+INFO:root:Inactivity Computation Done
+INFO:root:Commit Extraction for vim-swig
+INFO:root:Initializing Extraction
+INFO:root:Starting New Extraction
+INFO:root:Commit Extraction Complete
+INFO:root:Start Writing Commit History Table for vim-swig
+INFO:root:Commit History Table Written
+INFO:root:Starting Inactivity Computation for vim-swig
+INFO:root:Inactivity Computation Done
+INFO:root:Commit Extraction for unite-unicode
+INFO:root:Initializing Extraction
+INFO:root:Starting New Extraction
+INFO:root:Commit Extraction Complete
+INFO:root:No Commits for unite-unicode
+INFO:root:Commit Extraction for unite-ctags
+INFO:root:Initializing Extraction
+INFO:root:Starting New Extraction
+INFO:root:Commit Extraction Complete
+INFO:root:No Commits for unite-ctags
+INFO:root:Commit Extraction for org-mode
+INFO:root:Initializing Extraction
+INFO:root:Starting New Extraction
+INFO:root:Commit Extraction Complete
+INFO:root:Start Writing Commit History Table for org-mode
+INFO:root:Commit History Table Written
+INFO:root:Starting Inactivity Computation for org-mode
+INFO:root:Inactivity Computation Done
+INFO:root:Commit Extraction for vim-markdown
+INFO:root:Initializing Extraction
+INFO:root:Starting New Extraction
+INFO:root:Commit Extraction Complete
+INFO:root:Start Writing Commit History Table for vim-markdown
+INFO:root:Commit History Table Written
+INFO:root:Starting Inactivity Computation for vim-markdown
+INFO:root:Inactivity Computation Done
+INFO:root:Commit Extraction for Naut-for-reddit
+INFO:root:Initializing Extraction
+INFO:root:Starting New Extraction
+INFO:root:Commit Extraction Complete
+INFO:root:Start Writing Commit History Table for Naut-for-reddit
+INFO:root:Commit History Table Written
+INFO:root:Starting Inactivity Computation for Naut-for-reddit
+INFO:root:Inactivity Computation Done
+INFO:root:Commit Extraction for nvim-yarp
+INFO:root:Initializing Extraction
+INFO:root:Starting New Extraction
+INFO:root:Commit Extraction Complete
+INFO:root:Start Writing Commit History Table for nvim-yarp
+INFO:root:Commit History Table Written
+INFO:root:Starting Inactivity Computation for nvim-yarp
+INFO:root:Inactivity Computation Done
+INFO:root:Commit Extraction for vim-hug-neovim-rpc
+INFO:root:Initializing Extraction
+INFO:root:Starting New Extraction
+INFO:root:Commit Extraction Complete
+INFO:root:Start Writing Commit History Table for vim-hug-neovim-rpc
+INFO:root:Commit History Table Written
+INFO:root:Starting Inactivity Computation for vim-hug-neovim-rpc
+INFO:root:Inactivity Computation Done
+INFO:root:Commit Extraction for LanguageClient-neovim
+INFO:root:Initializing Extraction
+INFO:root:Starting New Extraction
+INFO:root:Commit Extraction Complete
+INFO:root:Start Writing Commit History Table for LanguageClient-neovim
+INFO:root:Commit History Table Written
+INFO:root:Starting Inactivity Computation for LanguageClient-neovim
+INFO:root:Inactivity Computation Done
+INFO:root:Commit Extraction for vims
+INFO:root:Initializing Extraction
+INFO:root:Starting New Extraction
+INFO:root:Commit Extraction Complete
+INFO:root:Start Writing Commit History Table for vims
+INFO:root:Commit History Table Written
+INFO:root:Starting Inactivity Computation for vims
+INFO:root:Inactivity Computation Done
+INFO:root:Commit Extraction for explore
+INFO:root:Initializing Extraction
+INFO:root:Starting New Extraction
+INFO:root:Commit Extraction Complete
+INFO:root:Start Writing Commit History Table for explore
+INFO:root:Commit History Table Written
+INFO:root:Starting Inactivity Computation for explore
+INFO:root:Inactivity Computation Done
+INFO:root:Commit Extraction for vim-lsp
+INFO:root:Initializing Extraction
+INFO:root:Starting New Extraction
+INFO:root:Commit Extraction Complete
+INFO:root:No Commits for vim-lsp
+INFO:root:Commit Extraction for deoplete-clang2
+INFO:root:Initializing Extraction
+INFO:root:Starting New Extraction
+INFO:root:Commit Extraction Complete
+INFO:root:Start Writing Commit History Table for deoplete-clang2
+INFO:root:Commit History Table Written
+INFO:root:Starting Inactivity Computation for deoplete-clang2
+INFO:root:Inactivity Computation Done
+INFO:root:Commit Extraction for deoplete-dart
+INFO:root:Initializing Extraction
+INFO:root:Starting New Extraction
+INFO:root:Commit Extraction Complete
+INFO:root:No Commits for deoplete-dart
+INFO:root:Commit Extraction for gtags.vim
+INFO:root:Initializing Extraction
+INFO:root:Starting New Extraction
+INFO:root:Commit Extraction Complete
+INFO:root:Start Writing Commit History Table for gtags.vim
+INFO:root:Commit History Table Written
+INFO:root:Starting Inactivity Computation for gtags.vim
+INFO:root:Inactivity Computation Done
+INFO:root:Commit Extraction for cscope.vim
+INFO:root:Initializing Extraction
+INFO:root:Starting New Extraction
+INFO:root:Commit Extraction Complete
+INFO:root:Start Writing Commit History Table for cscope.vim
+INFO:root:Commit History Table Written
+INFO:root:Starting Inactivity Computation for cscope.vim
+INFO:root:Inactivity Computation Done
+INFO:root:Commit Extraction for SpaceVim-theme
+INFO:root:Initializing Extraction
+INFO:root:Starting New Extraction
+INFO:root:Commit Extraction Complete
+INFO:root:Start Writing Commit History Table for SpaceVim-theme
+INFO:root:Commit History Table Written
+INFO:root:Starting Inactivity Computation for SpaceVim-theme
+INFO:root:Inactivity Computation Done
+INFO:root:Commit Extraction for FlatColor
+INFO:root:Initializing Extraction
+INFO:root:Starting New Extraction
+INFO:root:Commit Extraction Complete
+INFO:root:No Commits for FlatColor
+INFO:root:Commit Extraction for Unite-sources
+INFO:root:Initializing Extraction
+INFO:root:Starting New Extraction
+INFO:root:Commit Extraction Complete
+INFO:root:Start Writing Commit History Table for Unite-sources
+INFO:root:Commit History Table Written
+INFO:root:Starting Inactivity Computation for Unite-sources
+INFO:root:Inactivity Computation Done
+INFO:root:Commit Extraction for clever-f.vim
+INFO:root:Initializing Extraction
+INFO:root:Starting New Extraction
+INFO:root:Commit Extraction Complete
+INFO:root:No Commits for clever-f.vim
+INFO:root:Commit Extraction for vim-matchup
+INFO:root:Initializing Extraction
+INFO:root:Starting New Extraction
+INFO:root:Commit Extraction Complete
+INFO:root:No Commits for vim-matchup
+INFO:root:Commit Extraction for vim-automkdir
+INFO:root:Initializing Extraction
+INFO:root:Starting New Extraction
+INFO:root:Commit Extraction Complete
+INFO:root:No Commits for vim-automkdir
+INFO:root:Commit Extraction for fzf-neoyank
+INFO:root:Initializing Extraction
+INFO:root:Starting New Extraction
+INFO:root:Commit Extraction Complete
+INFO:root:No Commits for fzf-neoyank
+INFO:root:Commit Extraction for ctrlp-extensions
+INFO:root:Initializing Extraction
+INFO:root:Starting New Extraction
+INFO:root:Commit Extraction Complete
+INFO:root:Start Writing Commit History Table for ctrlp-extensions
+INFO:root:Commit History Table Written
+INFO:root:Starting Inactivity Computation for ctrlp-extensions
+INFO:root:Inactivity Computation Done
+INFO:root:Commit Extraction for Denite-sources
+INFO:root:Initializing Extraction
+INFO:root:Starting New Extraction
+INFO:root:Commit Extraction Complete
+INFO:root:Start Writing Commit History Table for Denite-sources
+INFO:root:Commit History Table Written
+INFO:root:Starting Inactivity Computation for Denite-sources
+INFO:root:Inactivity Computation Done
+INFO:root:Commit Extraction for vim-ctrlp-help
+INFO:root:Initializing Extraction
+INFO:root:Starting New Extraction
+INFO:root:Commit Extraction Complete
+INFO:root:Start Writing Commit History Table for vim-ctrlp-help
+INFO:root:Commit History Table Written
+INFO:root:Starting Inactivity Computation for vim-ctrlp-help
+INFO:root:Inactivity Computation Done
+INFO:root:Commit Extraction for vim-material
+INFO:root:Initializing Extraction
+INFO:root:Starting New Extraction
+INFO:root:Commit Extraction Complete
+INFO:root:Start Writing Commit History Table for vim-material
+INFO:root:Commit History Table Written
+INFO:root:Starting Inactivity Computation for vim-material
+INFO:root:Inactivity Computation Done
+INFO:root:Commit Extraction for bin
+INFO:root:Initializing Extraction
+WARNING:root:Failed to get commits from this project (409 Empty: Ignoring Repo):
+INFO:root:No Commits for bin
+INFO:root:Commit Extraction for denite.nvim
+INFO:root:Initializing Extraction
+INFO:root:Starting New Extraction
+INFO:root:Commit Extraction Complete
+INFO:root:No Commits for denite.nvim
+INFO:root:Commit Extraction for deoplete.nvim
+INFO:root:Initializing Extraction
+INFO:root:Starting New Extraction
+INFO:root:Commit Extraction Complete
+INFO:root:No Commits for deoplete.nvim
+INFO:root:Commit Extraction for nerdtree
+INFO:root:Initializing Extraction
+INFO:root:Starting New Extraction
+INFO:root:Commit Extraction Complete
+INFO:root:No Commits for nerdtree
+INFO:root:Commit Extraction for nerdcommenter
+INFO:root:Initializing Extraction
+INFO:root:Starting New Extraction
+INFO:root:Commit Extraction Complete
+INFO:root:No Commits for nerdcommenter
+INFO:root:Commit Extraction for VimCalc3
+INFO:root:Initializing Extraction
+INFO:root:Starting New Extraction
+INFO:root:Commit Extraction Complete
+INFO:root:No Commits for VimCalc3
+INFO:root:Commit Extraction for neo-tree.nvim
+INFO:root:Initializing Extraction
+INFO:root:Starting New Extraction
+INFO:root:Commit Extraction Complete
+INFO:root:No Commits for neo-tree.nvim
+INFO:root:Commit Extraction COMPLETE for 35 of 35 Side Projects
+INFO:root:Merging the Commits in the WHOLE SpaceVim Organization
+INFO:root:All the Organization commits have been merged with 
+INFO:root:Commit History Table Written
+INFO:root:Inactivity Computation Done
+INFO:root:Commit Extraction SUCCESSFULLY COMPLETED
