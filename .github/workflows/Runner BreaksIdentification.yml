@@ -66,6 +66,8 @@ jobs:
         else
            echo "Questa è la prima esecuzione."
         fi
+        rm -r developersInactivityAnalysis/Resources
+        cp -r Resources developersInactivityAnalysis
 
     - name: Run Python script BreaksIdentification.py with tf param
       run: python3 developersInactivityAnalysis/BreaksManager/BreaksIdentification.py tf
