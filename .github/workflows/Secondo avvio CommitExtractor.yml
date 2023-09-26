@@ -59,10 +59,10 @@ jobs:
       run: |  
         mkdir -p appoggio
         if [ -z "$(find appoggio/github -mindepth 1 -maxdepth 1)" ]; then
+          echo "La directory 'appoggio/${{ vars.OWNER }}' non esiste."
+        else
           rm -r appoggio/${{ vars.OWNER }}
           rm appoggio/Commit_Extraction_${{ vars.OWNER }}.log
-        else
-          echo "La directory 'appoggio/${{ vars.OWNER }}' non esiste."
         fi
         mv developersInactivityAnalysis/logs/Commit_Extraction_${{ vars.OWNER }}.log appoggio
         mv developersInactivityAnalysis/Organizations/${{ vars.OWNER }} appoggio
