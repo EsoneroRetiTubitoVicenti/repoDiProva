@@ -3,7 +3,7 @@ name: Runner CreateDatasetRecommeder
 on:
   workflow_dispatch:
   workflow_run:
-    workflows: ["Runner CommitExtractor", "Secondo avvio CommitExtractor"]
+    workflows: ["Runner CommitExtractor", "Second run CommitExtractor"]
     types:
       - completed
 
@@ -46,7 +46,6 @@ jobs:
       env:
         MY_SECRET: ${{ secrets.TOKEN }}
       run: python3 developersInactivityAnalysis/Devrecommender/Create_dataset_recommeder.py ${{ vars.OWNER }} ${{ vars.REPO }} $MY_SECRET
-      timeout-minutes: 340
 
 
     - name: Commit changes
