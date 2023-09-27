@@ -1,9 +1,9 @@
-name: Trigger Secondo avvio LocalNonDocCommitExtractor
+name: Trigger Second run LocalNonDocCommitExtractor
 
 on:
   workflow_dispatch:
   workflow_run:
-    workflows: ["Secondo avvio LocalNonDocCommitExtractor"]
+    workflows: ["Second run LocalNonDocCommitExtractor"]
     types:
       - completed
 
