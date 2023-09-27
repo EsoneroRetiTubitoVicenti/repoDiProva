@@ -1,0 +1,6 @@
+id;issue_id;date;creator_login;status;closed_at;merged;merged_at;number
+941315323;1241510404;2022-05-19 09:42:01;marchermans;open;NA;False;NA;11
+941203609;1241378951;2022-05-19 07:56:13;marchermans;closed;2022-05-19 07:56:49;True;2022-05-19 07:56:48;10
+940365392;1240436414;2022-05-18 19:42:26;marchermans;closed;2022-05-19 07:47:07;True;2022-05-19 07:47:07;9
+790151276;1065405402;2021-11-28 18:44:01;SizableShrimp;open;NA;False;NA;8
+636127162;882601829;2021-05-09 17:51:47;dependabot[bot];closed;2021-05-09 17:58:34;False;NA;1
