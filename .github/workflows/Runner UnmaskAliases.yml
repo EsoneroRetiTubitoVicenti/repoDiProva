@@ -41,14 +41,14 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Controlla se ci sono state altre esecuzioni di UnmaskAliases e recupera i file
+    - name: Check if there have been other UnmaskAliases executions and recover files
       run: | 
         mkdir -p developersInactivityAnalysis/A80_Results/${{ vars.REPO }}
         if [ -f "output/unmasking_results.csv" ]; then
-           echo "Ci sono state altre esecuzioni, recupero i file..."
+           echo "There have been other executions, file recovery..."
            mv output/unmasking_results.csv developersInactivityAnalysis/A80_Results/${{ vars.REPO }}
         else
-            echo "Questa è la prima esecuzione."
+            echo "This is the first execution."
         fi
 
     - name: Run Python script UnmaskAliases.py
@@ -74,5 +74,5 @@ jobs:
         git config --local user.email "d.vicenti1@studenti.uniba.it"
         git pull
         git add output
-        git commit -m "Fine UnmaskAliases, salvataggio di unmasking_results.csv in output"
+        git commit -m "End UnmaskAliases, saving unmasking_results.csv in output"
         git push
