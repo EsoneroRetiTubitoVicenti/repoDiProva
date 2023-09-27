@@ -58,10 +58,10 @@ jobs:
         
         
         if [ -f "output/Breaks_Identification_${{ vars.OWNER }}.log" ]; then
-           echo "Ci sono state altre esecuzioni, recupero i file..."
+           echo "There have been other executions, file recovery..."
            mv output/Breaks_Identification_${{ vars.OWNER }}.log developersInactivityAnalysis/logs         
         else
-           echo "Questa è la prima esecuzione."
+           echo "This is the first execution."
         fi
         rm -r developersInactivityAnalysis/Resources
         cp -r Resources developersInactivityAnalysis
@@ -97,5 +97,5 @@ jobs:
         git config --local user.email "d.vicenti1@studenti.uniba.it"
         git pull
         git add output
-        git commit -m "Fine BreaksIdentification, salvataggio di /${{ vars.OWNER }} e Breaks_Identification_${{ vars.OWNER }}.log in output"
+        git commit -m "End BreaksIdentification, saving /${{ vars.OWNER }} and Breaks_Identification_${{ vars.OWNER }}.log in output"
         git push
