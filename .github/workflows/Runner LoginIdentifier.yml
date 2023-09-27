@@ -3,7 +3,7 @@ name: Runner LoginIdentifier
 on:
   workflow_dispatch:
   workflow_run:
-    workflows: ["Runner LocalNonDocCommitExtractor", "Secondo avvio LocalNonDocCommitExtractor"]
+    workflows: ["Runner LocalNonDocCommitExtractor", "Second run LocalNonDocCommitExtractor"]
     types:
       - completed
 
@@ -41,14 +41,14 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Controlla se ci sono state altre esecuzioni di LoginIdentifier e recupera i file
+    - name: Check if there have been other LoginIdentifier executions and recover files
       run: | 
         mkdir -p developersInactivityAnalysis/A80_Results/${{ vars.REPO }}
         if [ -f "output/login_map.csv" ]; then
-           echo "Ci sono state altre esecuzioni, recupero i file..."
+           echo "There have been other executions, file recovery..."
            mv output/login_map.csv developersInactivityAnalysis/A80_Results/${{ vars.REPO }}
         else
-            echo "Questa è la prima esecuzione."
+            echo "This is the first execution."
         fi
 
     - name: Run Python script LoginIdentifier.py
@@ -74,5 +74,5 @@ jobs:
         git config --local user.email "d.vicenti1@studenti.uniba.it"
         git pull
         git add output
-        git commit -m "Fine LoginIdentifier, salvataggio di login_map.csv in output"
+        git commit -m "End LoginIdentifier, saving login_map.csv in output"
         git push
