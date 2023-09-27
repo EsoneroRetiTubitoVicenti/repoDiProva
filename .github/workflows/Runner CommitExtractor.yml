@@ -3,14 +3,14 @@ name: Runner CommitExtractor
 on:
   workflow_dispatch:
   workflow_run:
-    workflows: ["Runner LocalNonDocCommitExtractor", "Trigger Secondo avvio CommitExtractor"]
+    workflows: ["Runner LocalNonDocCommitExtractor", "Trigger Second run CommitExtractor"]
     types:
       - completed
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: ${{ (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.name == 'Runner LocalNonDocCommitExtractor') || (github.event.workflow_run.conclusion == 'failure' && github.event.workflow_run.name == 'Trigger Secondo avvio CommitExtractor') }}
+    if: ${{ (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.name == 'Runner LocalNonDocCommitExtractor') || (github.event.workflow_run.conclusion == 'failure' && github.event.workflow_run.name == 'Trigger Second run CommitExtractor') }}
 
     steps:
     - name: Checkout main repo
@@ -41,23 +41,23 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Controlla se ci sono state altre esecuzioni di CommitExtractor e recupera i file
+    - name: Check if there have been other CommitExtractor executions and recover files
       run: | 
         mkdir -p developersInactivityAnalysis/logs
         mkdir -p developersInactivityAnalysis/Organizations
-        if [ -f "appoggio/Commit_Extraction_${{ vars.OWNER }}.log" ]; then
-           echo "C'è già un esecuzione in corso, recupero i file..."
-           mv appoggio/Commit_Extraction_${{ vars.OWNER }}.log developersInactivityAnalysis/logs
-           mv appoggio/${{ vars.OWNER }} developersInactivityAnalysis/Organizations
+        if [ -f "support/Commit_Extraction_${{ vars.OWNER }}.log" ]; then
+           echo "There is already a running, recovering files..."
+           mv support/Commit_Extraction_${{ vars.OWNER }}.log developersInactivityAnalysis/logs
+           mv support/${{ vars.OWNER }} developersInactivityAnalysis/Organizations
            
         elif [ -f "output/Commit_Extraction_${{ vars.OWNER }}.log" ]; then
-           echo "Nessuna esecuzione in corso, ma ce ne sono state già altre, recupero i file..."
+           echo "No execution in progress, but there have already been others, recovering files..."
            cp -r output/${{ vars.OWNER }} developersInactivityAnalysis/Organizations
            cp output/Commit_Extraction_${{ vars.OWNER }}.log developersInactivityAnalysis/logs
         else 
-           echo "Questa è la prima esecuzione."
+           echo "This is the first execution."
         fi
-      #mkdir -p developersInactivityAnalysis/Organizations/${{ vars.OWNER }} se non lo crea da solo mettere prima di fi
+
 
     - name: Run Python script CommitExtractor.py
       env:
@@ -65,23 +65,23 @@ jobs:
       run: python3 developersInactivityAnalysis/Extractors/CommitExtractor.py ${{ vars.OWNER }}/${{ vars.REPO }} $MY_SECRET
       timeout-minutes: 340
       
-    - name: Salva i dati temporanei nella cartella di appoggio
-      if: ${{ failure() }} #si avvia solo se quello di prima è stato interrotto
+    - name: Save temporary data to support folder
+      if: ${{ failure() }} 
       run: |  
-        mkdir -p appoggio
-        if [ -z "$(find appoggio/github -mindepth 1 -maxdepth 1)" ]; then
-          echo "La directory 'appoggio/${{ vars.OWNER }}' non esiste."
+        mkdir -p support
+        if [ -z "$(find support/${{ vars.OWNER }} -mindepth 1 -maxdepth 1)" ]; then
+          echo "directory 'support/${{ vars.OWNER }}' doesn't exist."
         else
-          rm -r appoggio/${{ vars.OWNER }}
-          rm appoggio/Commit_Extraction_${{ vars.OWNER }}.log
+          rm -r support/${{ vars.OWNER }}
+          rm support/Commit_Extraction_${{ vars.OWNER }}.log
         fi
-        mv developersInactivityAnalysis/logs/Commit_Extraction_${{ vars.OWNER }}.log appoggio
-        mv developersInactivityAnalysis/Organizations/${{ vars.OWNER }} appoggio
+        mv developersInactivityAnalysis/logs/Commit_Extraction_${{ vars.OWNER }}.log support
+        mv developersInactivityAnalysis/Organizations/${{ vars.OWNER }} support
         git config --local user.name "domenico-77"
         git config --local user.email "d.vicenti1@studenti.uniba.it"
         git pull
-        git add appoggio
-        git commit -m "Aggiunti appoggio/${{ vars.OWER }} e appoggio/Commit_Extraction_${{ vars.OWNER }}.log"
+        git add support
+        git commit -m "Added support/${{ vars.OWER }} and support/Commit_Extraction_${{ vars.OWNER }}.log"
         git push
 
 
@@ -101,7 +101,7 @@ jobs:
            mv developersInactivityAnalysis/logs/Commit_Extraction_${{ vars.OWNER }}.log output
            mv developersInactivityAnalysis/Organizations/${{ vars.OWNER }} output
         fi
-    #cp developersInactivityAnalysis/Organizations/${{ vars.OWNER }}/pauses_dates_list.csv output da mettere negli spazi vuoti
+
 
     - name: Commit changes
       run: |        
@@ -109,5 +109,5 @@ jobs:
         git config --local user.email "d.vicenti1@studenti.uniba.it"
         git pull
         git add output
-        git commit -m "Fine estrazione, salvataggio di Commit_Extraction_${{ vars.OWNER }}.log e /${{ vars.OWNER }} in output"
+        git commit -m "End of extraction, saving Commit_Extraction_${{ vars.OWNER }}.log and /${{ vars.OWNER }} in output"
         git push
