@@ -1,16 +1,16 @@
-name: Secondo avvio CommitExtractor
+name: Second run CommitExtractor
 on:
   workflow_dispatch:
-#  workflow_run:
-#    workflows: ["Runner CommitExtractor"]
-#    types:
-#      - completed
+  workflow_run:
+    workflows: ["Runner CommitExtractor"]
+    types:
+      - completed
 
 jobs:
   job_name:
     runs-on: ubuntu-latest
 
-#    if: ${{ github.event.workflow_run.conclusion == 'failure' }}
+    if: ${{ github.event.workflow_run.conclusion == 'failure' }}
 
     steps:
     - name: Checkout main repo
@@ -41,12 +41,12 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: sposta da appoggio a developersInactivityAnalysis
+    - name: move from support to developersInactivityAnalysis
       run: |
          mkdir -p developersInactivityAnalysis/logs
          mkdir -p developersInactivityAnalysis/Organizations
-         mv appoggio/Commit_Extraction_${{ vars.OWNER }}.log developersInactivityAnalysis/logs
-         mv appoggio/${{ vars.OWNER }} developersInactivityAnalysis/Organizations
+         mv support/Commit_Extraction_${{ vars.OWNER }}.log developersInactivityAnalysis/logs
+         mv support/${{ vars.OWNER }} developersInactivityAnalysis/Organizations
       
     - name: Run Python script
       env:
@@ -54,23 +54,23 @@ jobs:
       run: python3 developersInactivityAnalysis/Extractors/CommitExtractor.py ${{ vars.OWNER }}/${{ vars.REPO }} $MY_SECRET
       timeout-minutes: 340
       
-    - name: Salva i dati temporanei nella cartella di appoggio
-      if: ${{ failure() }} #si avvia solo se quello di prima è stato interrotto
+    - name: Save temporary data to support folder
+      if: ${{ failure() }}
       run: |  
-        mkdir -p appoggio
-        if [ -z "$(find appoggio/github -mindepth 1 -maxdepth 1)" ]; then
-          echo "La directory 'appoggio/${{ vars.OWNER }}' non esiste."
+        mkdir -p support
+        if [ -z "$(find support/${{ vars.OWNER }} -mindepth 1 -maxdepth 1)" ]; then
+          echo "directory 'support/${{ vars.OWNER }}' doesn't exist."
         else
-          rm -r appoggio/${{ vars.OWNER }}
-          rm appoggio/Commit_Extraction_${{ vars.OWNER }}.log
+          rm -r support/${{ vars.OWNER }}
+          rm support/Commit_Extraction_${{ vars.OWNER }}.log
         fi
-        mv developersInactivityAnalysis/logs/Commit_Extraction_${{ vars.OWNER }}.log appoggio
-        mv developersInactivityAnalysis/Organizations/${{ vars.OWNER }} appoggio
+        mv developersInactivityAnalysis/logs/Commit_Extraction_${{ vars.OWNER }}.log support
+        mv developersInactivityAnalysis/Organizations/${{ vars.OWNER }} support
         git config --local user.name "domenico-77"
         git config --local user.email "d.vicenti1@studenti.uniba.it"
         git pull
-        git add appoggio
-        git commit -m "Aggiornati appoggio/${{ vars.OWNER }} e appoggio/Commit_Extraction_${{ vars.OWNER }}.log"
+        git add support
+        git commit -m "Uploaded support/${{ vars.OWNER }} and support/Commit_Extraction_${{ vars.OWNER }}.log"
         git push
 
 
@@ -98,5 +98,5 @@ jobs:
         git config --local user.email "d.vicenti1@studenti.uniba.it"
         git pull
         git add output
-        git commit -m "Fine estrazione, salvataggio di Commit_Extraction_${{ vars.OWNER }}.log e /${{ vars.OWNER }} in output"
+        git commit -m "End of extraction, saving Commit_Extraction_${{ vars.OWNER }}.log and /${{ vars.OWNER }} in output"
         git push
