@@ -50,16 +50,16 @@ jobs:
       timeout-minutes: 340
 
 
-    - name: Creazione della cartella con la data corrente
+    - name: Creating the folder with the current date
       run: mkdir -p pastExecutions/$(date +'%Y-%m-%d')
       
-    - name: Sposta i file dall'output alla cartella con la data corrente
+    - name: Move files from output to folder with current date
       run: mv output/* pastExecutions/$(date +'%Y-%m-%d')
 
-    - name: Svuota la cartella "output" e "appoggio"
+    - name: Empty the folder "output" and "support"
       run: |
         rm -rf output/*
-        rm -rf appoggio/*
+        rm -rf support/*
       
     - name: Commit changes
       run: |        
@@ -67,7 +67,7 @@ jobs:
         git config --local user.email "d.vicenti1@studenti.uniba.it"
         git pull
         git add pastExecutions
-        git add appoggio
+        git add support
         git add output
         git commit -m "End process"
         git push
