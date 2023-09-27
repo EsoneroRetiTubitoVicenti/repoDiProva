@@ -59,7 +59,7 @@ jobs:
       timeout-minutes: 340
       
     - name: Save temporary data to support folder
-      if: ${{ failure() }} #si avvia solo se quello di prima è stato interrotto
+      if: ${{ failure() }} #only starts if the previous one was interrupted
       run: |  
         if [ -d "support/${{ vars.REPO }}" ]; then
           rm -r support/${{ vars.REPO }}
