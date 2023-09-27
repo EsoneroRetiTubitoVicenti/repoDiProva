@@ -62,8 +62,8 @@ jobs:
 
     - name: Commit changes
       run: |        
-        git config --local user.name "domenico-77"
-        git config --local user.email "d.vicenti1@studenti.uniba.it"
+        git config --local user.name "${{ vars.NAME }}"
+        git config --local user.email "${{ vars.EMAIL }}"
         git pull
         git add output
         git commit -m "End CodingTableBuilder, saving ${{ vars.OWNER }} in output"
