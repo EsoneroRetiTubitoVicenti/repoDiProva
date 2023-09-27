@@ -1,4 +1,4 @@
-name: Secondo avvio PullRequestsExtractor
+name: Second run PullRequestsExtractor
 on:
   workflow_dispatch:
   workflow_run:
@@ -42,29 +42,29 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: sposta da appoggio a developersInactivityAnalysis
+    - name: move from support to developersInactivityAnalysis
       run: |
          mkdir -p developersInactivityAnalysis/logs
          mkdir -p developersInactivityAnalysis/Organizations
-         mv appoggio/Activities_Extraction_${{ vars.OWNER }}.log developersInactivityAnalysis/logs
-         mv appoggio/${{ vars.OWNER }} developersInactivityAnalysis/Organizations
+         mv support/Activities_Extraction_${{ vars.OWNER }}.log developersInactivityAnalysis/logs
+         mv support/${{ vars.OWNER }} developersInactivityAnalysis/Organizations
       
-    - name: Run Python script ActivitiesExtractor.py
+    - name: Run Python script PullRequestsExtractor.py
       env:
         MY_SECRET: ${{ secrets.TOKEN }}
       run: python3 developersInactivityAnalysis/Extractors/PullRequestsExtractor.py ${{ vars.OWNER }}/${{ vars.REPO }} $MY_SECRET
       timeout-minutes: 340
       
-    - name: Salva i dati temporanei nella cartella di appoggio
-      if: ${{ failure() }} #si avvia solo se quello di prima è stato interrotto
+    - name: Save temporary data to support folder
+      if: ${{ failure() }}
       run: |  
-        mv developersInactivityAnalysis/logs/Activities_Extraction_${{ vars.OWNER }}.log appoggio
-        mv developersInactivityAnalysis/Organizations/${{ vars.OWNER }} appoggio
+        mv developersInactivityAnalysis/logs/Activities_Extraction_${{ vars.OWNER }}.log support
+        mv developersInactivityAnalysis/Organizations/${{ vars.OWNER }} support
         git config --local user.name "domenico-77"
         git config --local user.email "d.vicenti1@studenti.uniba.it"
         git pull
-        git add appoggio
-        git commit -m "Aggiornati appoggio/github e appoggio/Activities_Extraction_github.log"
+        git add support
+        git commit -m "Uploaded support/${{ vars.OWNER }} and support/Activities_Extraction_${{ vars.OWNER }}.log"
         git push
 
 
@@ -87,5 +87,5 @@ jobs:
         git config --local user.email "d.vicenti1@studenti.uniba.it"
         git pull
         git add output
-        git commit -m "Fine estrazione, salvataggio di Activities_Extraction_${{ vars.OWNER }}.log e /${{ vars.OWNER }} in output"
+        git commit -m "End of extraction, saving Activities_Extraction_${{ vars.OWNER }}.log and /${{ vars.OWNER }} in output"
         git push
