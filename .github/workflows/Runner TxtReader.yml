@@ -52,5 +52,5 @@ jobs:
         git config --local user.email "d.vicenti1@studenti.uniba.it"
         git pull
         git add output
-        git commit -m "Fine TxtReader"
+        git commit -m "End TxtReader"
         git push
