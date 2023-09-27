@@ -59,7 +59,10 @@ jobs:
     - name: Empty the folder "output" and "support"
       run: |
         rm -rf output/*
-        rm -rf support/*
+        if [ -d "support" ]; then
+          rm -rf support/*
+        fi
+        
       
     - name: Commit changes
       run: |        
