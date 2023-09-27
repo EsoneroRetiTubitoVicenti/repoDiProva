@@ -1,4 +1,4 @@
-name: Secondo avvio CreateDatasetRecommeder
+name: Second run CreateDatasetRecommeder
 on:
   workflow_dispatch:
   workflow_run:
@@ -47,7 +47,6 @@ jobs:
       env:
         MY_SECRET: ${{ secrets.TOKEN }}
       run: python3 developersInactivityAnalysis/Devrecommender/Create_dataset_recommeder.py ${{ vars.OWNER }}/${{ vars.REPO }} $MY_SECRET
-      timeout-minutes: 340
 
       
     - name: Commit changes
