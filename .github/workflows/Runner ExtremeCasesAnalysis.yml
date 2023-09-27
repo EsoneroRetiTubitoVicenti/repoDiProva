@@ -42,7 +42,7 @@ jobs:
         pip install -r requirements.txt
 
         
-    - name: Setup directory
+    - name: Set up directory
       run: |
         mkdir -p developersInactivityAnalysis/Organizations
         mkdir -p developersInactivityAnalysis/Organizations/A80API
@@ -50,11 +50,6 @@ jobs:
         mkdir -p developersInactivityAnalysis/Organizations${{ vars.OWNER }}/Dev_Breaks
         cp -r output/${{ vars.OWNER }}/Dev_Breaks/A80API developersInactivityAnalysis/Organizations${{ vars.OWNER }}/Dev_Breaks
         
-        if [ -e "developersInactivityAnalysis/Organizations${{ vars.OWNER }}/Dev_Breaks/A80API" ]; then
-            echo "Il percorso esiste."
-        else
-            echo "Il percorso non esiste."
-        fi
         rm -r developersInactivityAnalysis/Resources
         cp -r Resources developersInactivityAnalysis
 
@@ -75,5 +70,5 @@ jobs:
         git config --local user.email "d.vicenti1@studenti.uniba.it"
         git pull
         git add output
-        git commit -m "Fine ExtremeCasesAnalysis, salvataggio di ${{ vars.OWNER }} in output"
+        git commit -m "End ExtremeCasesAnalysis, saving ${{ vars.OWNER }} in output"
         git push
