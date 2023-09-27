@@ -1,0 +1,4 @@
+id;issue_id;date;creator_login;status;closed_at;merged;merged_at;number
+1300172642;1652186586;2023-04-03 14:27:00;beta-ziliani;closed;2023-04-03 19:20:02;True;2023-04-03 19:20:02;3
+1255212519;1600889925;2023-02-27 10:21:32;straight-shoota;closed;2023-02-27 14:10:52;True;2023-02-27 14:10:52;2
+1103201530;1427370801;2022-10-28 14:44:46;renovate[bot];open;NA;False;NA;1
