@@ -67,7 +67,9 @@ jobs:
         git config --local user.email "${{ vars.EMAIL }}"
         git pull
         git add pastExecutions
-        git add support
+        if [ -d "support" ]; then
+          git add support
+        fi
         git add output
         git commit -m "End process"
         git push
