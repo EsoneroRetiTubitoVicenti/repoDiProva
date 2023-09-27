@@ -41,9 +41,8 @@ jobs:
         pip install -r requirements.txt
 
         
-    - name: Sposta e rinomina il file
+    - name: Move and rename the file
       run: |
-        # Sostituisci questi valori con i tuoi percorsi e nomi di file desiderati
         ORIG_PATH=output/${{ vars.OWNER }}
         DEST_PATH=output
         OLD_FILE_NAME=coding_pauses_dates.csv
@@ -53,7 +52,7 @@ jobs:
       working-directory: ${{ github.workspace }}
       
 
-    - name: Run Python script MissingStuffCollector.py
+    - name: Run Python script HunterDevGone.py
       run: |
         mkdir -p developersInactivityAnalysis/Organizations/A80API
         mkdir -p developersInactivityAnalysis/Organizations/${{ vars.OWNER }}/${{ vars.REPO }}/
@@ -62,7 +61,7 @@ jobs:
         python3 developersInactivityAnalysis/Devrecommender/HunterDevGone.py
         
       
-      #mv developersInactivityAnalysis/Organizations/${{ vars.OWNER }} output
+
     - name: Move CSV file to main repository
       run: | 
         rm -r output/${{ vars.OWNER }}
@@ -74,5 +73,5 @@ jobs:
         git config --local user.email "d.vicenti1@studenti.uniba.it"
         git pull
         git add output
-        git commit -m "Fine HunterDevGone, salvataggio di /${{ vars.OWNER }} in output"
+        git commit -m "End HunterDevGone, saving /${{ vars.OWNER }} in output"
         git push
