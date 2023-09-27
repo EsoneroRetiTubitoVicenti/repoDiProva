@@ -38,7 +38,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Controlla se ci sono state altre esecuzioni di BreaksLabeling e recupera i file
+    - name: Check if there have been other BreaksLabeling executions and recover files
       run: | 
         mkdir -p developersInactivityAnalysis/Organizations
         mkdir -p developersInactivityAnalysis/logs
@@ -46,10 +46,10 @@ jobs:
         mkdir -p developersInactivityAnalysis/Organizations/${{ vars.OWNER }}/Dev_Breaks/A80MOD
         
         if [ -f "output/Breaks_Labeling_${{ vars.OWNER }}.log" ]; then
-           echo "Ci sono state altre esecuzioni, recupero i file..."
+           echo "There have been other executions, file recovery..."
            mv output/Breaks_Labeling_${{ vars.OWNER }}.log developersInactivityAnalysis/logs         
         else
-           echo "Questa è la prima esecuzione."
+           echo "This is the first execution."
         fi
         rm -r developersInactivityAnalysis/Resources
         cp -r Resources developersInactivityAnalysis
@@ -85,5 +85,5 @@ jobs:
         git config --local user.email "d.vicenti1@studenti.uniba.it"
         git pull
         git add output
-        git commit -m "Fine BreaksLabeling, salvataggio di /${{ vars.OWNER }} e Breaks_Labeling_${{ vars.OWNER }}.log in output"
+        git commit -m "End BreaksLabeling, saving /${{ vars.OWNER }} and Breaks_Labeling_${{ vars.OWNER }}.log in output"
         git push
