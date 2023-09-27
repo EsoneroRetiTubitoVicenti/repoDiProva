@@ -2,6 +2,10 @@ name: Runner LocalNonDocCommitExtractor
 
 on:
   workflow_dispatch:
+ # workflow_run:
+  #  workflows: ["Trigger Second run CommitExtractor"]
+  #  types:
+   #   - completed
  # schedule:
  #   - cron: '0 0 1 * *'
 # Perform the action every first day of the month at 00:00
