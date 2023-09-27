@@ -3,9 +3,8 @@ name: Runner LocalNonDocCommitExtractor
 on:
   workflow_dispatch:
  # schedule:
-    # Esegui l'azione ogni primo giorno del mese alle 00:00
  #   - cron: '0 0 1 * *'
-
+# Perform the action every first day of the month at 00:00
 
 jobs:
   build:
@@ -43,14 +42,14 @@ jobs:
         pip install -r requirements.txt
 
 
-    - name: Controlla se ci sono state altre esecuzioni di LocalNonDocCommitExtractor e recupera i file
+    - name: Check if there have been other LocalNonDocCommitExtractor executions and recover files
       run: | 
         mkdir -p output
-        mkdir -p appoggio
+        mkdir -p support
         if [ -z "$(find output/${{ vars.REPO }} -mindepth 1 -maxdepth 1)" ]; then
-           echo "Questa è la prima esecuzione."
+           echo "This is the first execution."
         else
-           echo "Ci sono state altre esecuzioni, recupero i file..."
+           echo "There have been other executions, file recovery..."
            mkdir -p developersInactivityAnalysis/A80_Results/${{ vars.REPO }}
            mv output/${{ vars.REPO }}/commits.csv developersInactivityAnalysis/A80_Results/${{ vars.REPO }}
         fi
@@ -59,20 +58,20 @@ jobs:
       run: python3 developersInactivityAnalysis/CoreSelection/LocalNonDocCommitExtractor.py https://github.com/${{ vars.OWNER }}/${{ vars.REPO }}.git
       timeout-minutes: 340
       
-    - name: Salva i dati temporanei nella cartella di appoggio
+    - name: Save temporary data to support folder
       if: ${{ failure() }} #si avvia solo se quello di prima è stato interrotto
       run: |  
-        if [ -d "appoggio/${{ vars.REPO }}" ]; then
-          rm -r appoggio/${{ vars.REPO }}
+        if [ -d "support/${{ vars.REPO }}" ]; then
+          rm -r support/${{ vars.REPO }}
         else
-          echo "La directory 'appoggio/${{ vars.REPO }}' non esiste."
+          echo "Directory 'support/${{ vars.REPO }}' doesn't exist."
         fi
-        mv developersInactivityAnalysis/A80_Results/${{ vars.REPO }} appoggio
+        mv developersInactivityAnalysis/A80_Results/${{ vars.REPO }} support
         git config --local user.name "domenico-77"
         git config --local user.email "d.vicenti1@studenti.uniba.it"
         git pull
-        git add appoggio/${{ vars.REPO }}
-        git commit -m "Aggiunto linguist in ${{ vars.REPO }}"
+        git add support/${{ vars.REPO }}
+        git commit -m "Added ${{ vars.REPO }} in support"
         git push
 
 
@@ -86,10 +85,10 @@ jobs:
            rm -r output/${{ vars.REPO }}
            mv developersInactivityAnalysis/A80_Results/${{ vars.REPO }} output
         fi
-        if [ -z "$(find appoggio/${{ vars.REPO }} -mindepth 1 -maxdepth 1)" ]; then
-           echo "oppoggio empty"
+        if [ -z "$(find support/${{ vars.REPO }} -mindepth 1 -maxdepth 1)" ]; then
+           echo "support empty"
         else
-            rm -r appoggio/${{ vars.REPO }}
+            rm -r support/${{ vars.REPO }}
         fi    
 
     - name: Commit changes
@@ -98,5 +97,5 @@ jobs:
         git config --local user.email "d.vicenti1@studenti.uniba.it"
         git pull
         git add output/${{ vars.REPO }}
-        git commit -m "Terminato LocalNonDocCommitExtractor, aggiunto linguist in output"
+        git commit -m "Finished LocalNonDocCommitExtractor, added ${{ vars.REPO }} in output"
         git push
