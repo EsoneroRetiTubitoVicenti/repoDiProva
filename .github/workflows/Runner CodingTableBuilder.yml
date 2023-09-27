@@ -42,7 +42,7 @@ jobs:
         pip install -r requirements.txt
 
 
-    - name: Run Python script UnmaskAliases.py
+    - name: Run Python script CodingTableBuilder.py
       env:
          MY_SECRET: ${{ secrets.TOKEN }}
       run: |
@@ -66,5 +66,5 @@ jobs:
         git config --local user.email "d.vicenti1@studenti.uniba.it"
         git pull
         git add output
-        git commit -m "Fine CodingTableBuilder, salvataggio di ${{ vars.OWNER }} in output"
+        git commit -m "End CodingTableBuilder, saving ${{ vars.OWNER }} in output"
         git push
