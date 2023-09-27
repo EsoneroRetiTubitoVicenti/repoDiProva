@@ -3,7 +3,7 @@ name: Truck-Factor
 on:
   workflow_dispatch:
   workflow_run:
-    workflows: ["Runner LocalNonDocCommitExtractor", "Secondo avvio LocalNonDocCommitExtractor"]
+    workflows: ["Runner LocalNonDocCommitExtractor", "Second run LocalNonDocCommitExtractor"]
     types:
       - completed
 
@@ -74,7 +74,7 @@ jobs:
         git config --local user.email "d.vicenti1@studenti.uniba.it"
         git pull
         git add output
-        git commit -m "Terminato Truck-Factor, aggiunto TF_report.txt in output"
+        git commit -m "End Truck-Factor, added TF_report.txt in output"
         git push
         
   
