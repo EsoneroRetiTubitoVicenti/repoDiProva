@@ -1,9 +1,9 @@
-name: Trigger Secondo avvio CommitExtractor
+name: Trigger Second run CommitExtractor
 
 on:
   workflow_dispatch:
   workflow_run:
-    workflows: ["Secondo avvio CommitExtractor"]
+    workflows: ["Second run CommitExtractor"]
     types:
       - completed
 
