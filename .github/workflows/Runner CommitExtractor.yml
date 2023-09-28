@@ -6,6 +6,8 @@ on:
     workflows: ["Runner LocalNonDocCommitExtractor", "Trigger Second run CommitExtractor"]
     types:
       - completed
+   # schedule:
+   #   - cron: '30 17 1 * *'
 
 jobs:
   build:
