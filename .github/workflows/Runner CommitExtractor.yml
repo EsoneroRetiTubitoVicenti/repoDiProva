@@ -3,7 +3,7 @@ name: Runner CommitExtractor
 on:
   workflow_dispatch:
   workflow_run:
-    workflows: ["Runner LocalNonDocCommitExtractor", "Trigger Second run CommitExtractor"]
+    workflows: ["Trigger Second run CommitExtractor"]
     types:
       - completed
    # schedule:
@@ -12,7 +12,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: ${{ (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.name == 'Runner LocalNonDocCommitExtractor') || (github.event.workflow_run.conclusion == 'failure' && github.event.workflow_run.name == 'Trigger Second run CommitExtractor') }}
+    
 
     steps:
     - name: Checkout main repo
