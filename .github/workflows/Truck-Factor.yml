@@ -2,10 +2,6 @@ name: Truck-Factor
 
 on:
   workflow_dispatch:
-  workflow_run:
-    workflows: ["Runner LocalNonDocCommitExtractor", "Second run LocalNonDocCommitExtractor"]
-    types:
-      - completed
    # schedule:
    #   - cron: '30 17 1 * *'
 
@@ -13,7 +9,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+
 
     steps:
     - name: Checkout main repo
